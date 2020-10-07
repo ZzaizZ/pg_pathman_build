@@ -1,6 +1,6 @@
 # Maintainer: Dmitry Ivanov <ivadmi5@gmail.com>
 pkgname=pg_pathman-git
-pkgver=r743.0b5edec
+pkgver=r1711.4de7727
 pkgrel=1
 pkgdesc="pg_pathman - partitioning tool for PostgreSQL"
 arch=('i686' 'x86_64')
@@ -10,7 +10,7 @@ depends=('postgresql')
 conflicts=('pg_pathman')
 provides=('pg_pathman')
 source=("$pkgname"::'git+https://github.com/postgrespro/pg_pathman')
-makedepends=('git')
+makedepends=('git' 'clang' 'llvm')
 sha256sums=('SKIP')
 
 pkgver() {
